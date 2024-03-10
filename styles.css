@@ -160,7 +160,7 @@ body{
    background-color: white;
    width: 100%;
    position: fixed;
-   margin-top: 50px;
+   margin-top: 60px;
    margin-left: 10%;
    height: 70px;
    overflow-x: scroll;
@@ -446,6 +446,9 @@ body{
    }
    .side-nav{
       display: none;
+   }
+   .navdivii{
+      margin-left: 30px;
    }
    .contents{
       grid-template-columns: 600px;
