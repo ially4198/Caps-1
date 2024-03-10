@@ -22,13 +22,12 @@ body{
     width: 100%;
     background-color: white;
     z-index: 5;
+    margin-left: 30px;
 }
 
 .logo{
     font-size: 30px;
     line-height: 70px;
-    margin-left: 20px;
-  
 }
 .search-container{
    display: flex;
@@ -147,8 +146,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    
     margin-top: 5px;
+   
  }
  .profile a{
     text-align: center;
@@ -227,9 +226,9 @@ body{
  }
  
  .slider{
-   width: 26%;
+   width: 24%;
    height:100dvh;
-   /* margin-top: 700px; */
+   margin-top: 700px;
    background-color:white;
    transform: translateX(-100%);
    display: flex;
@@ -239,9 +238,14 @@ body{
    flex-direction: column;
    overflow-y: scroll;
    transition: 0.5s ease-in-out;
+   scrollbar-width: thin;
+   
  }
+ 
+ 
+ 
  .div-1{
-   margin-top: 400px;
+   margin-top: 100px;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -267,6 +271,9 @@ body{
    width: 90%;
    margin-left: 25px;
  }
+ .bars{
+  
+ }
  #check{
    position: relative;
    display: none;
@@ -276,9 +283,7 @@ body{
    left: 15px;
    right: 0;
    bottom: 0;
-   top: 25px;
-   z-index: 101;
-
+   top: 25px;  
    font-size: 30px;
 }
 #check:checked ~ .slider{
@@ -451,6 +456,12 @@ body{
   
     }
 }
+@media screen  and (max-width:720px) {
+   .mic, .bell{
+      display: none;
+   }
+   
+}
 @media screen  and (max-width:690px){
    
    .contents{
@@ -463,10 +474,57 @@ body{
     }
 
 }
-@media screen  and (max-width:720px) {
-   .mic, .bell{
+
+@media screen and (max-width:580px) {
+   .create{
       display: none;
    }
-   
+   .profile{
+   margin-right: -20px;
+   }
+   .contents{
+      grid-template-columns: 400px;
+   }
+   .itemimg{
+      width: 380px;
+      height:250px;
+  
+    }
+   /* .bars{
+      margin-right: 50px;
+      font-size: 20px;
+   } */
+   .top-nav{
+      margin-left: 10px;
+   }
+   .logo, .checkbtn{
+      font-size: 20px
+   }
+   sup{
+      display: none;
+   }
+}
+@media screen and (max-width:450px){
+   .contents{
+      grid-template-columns: 300px;
+   }
+   .itemimg{
+      width: 280px;
+      height:210px;
+  
+    }
+}
+
+@media screen and (max-width:400px) {
+  
+   .profile{
+      margin-right: -40px;
+     display: none;
+   }
+   .searchbtn button[type="submit"]{
+      width: 10px;
+      float: right;
+   }
+ 
 }
 
